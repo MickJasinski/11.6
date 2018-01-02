@@ -29,7 +29,14 @@ $(function() {
             });
             // add card
             $columnAddCard.click(function() {
-                self.addCard(new Card(prompt("Enter the name of the card")));
+                var cardName = prompt("Enter the name of the card");
+                if (cardName == '') {
+                    self.addCard(new Card('New card'));
+                } else if (cardName == null) {
+                    return null;
+                } else {
+                    self.addCard(new Card(cardName));
+                }
             });
             // column content
             $column.append($columnDelete)
@@ -102,9 +109,16 @@ $(function() {
     // create column action
     $('.create-column')
         .click(function() {
-            var name = prompt('Enter a column name');
-            var column = new Column(name);
+            var columnName = prompt('Enter a column name');
+            if (columnName == '') {
+                var column = new Column('New column')
+            } else if (columnName == null) {
+                return null;
+            } else {
+                var column = new Column(columnName);
+            }
             board.addColumn(column);
+
         });
 
 

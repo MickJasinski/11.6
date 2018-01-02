@@ -82,7 +82,7 @@ body {
 .card {
     background-color: #d8ba4e;
     text-align: right;
-    box-shadow: 1px 3px 10px rgba(0, 0, 0, .6)
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, .6);
 }
 
 .card-description {
