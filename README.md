@@ -2,5 +2,5 @@
 
 This is a front-end for a Kanban Board app.
 
-Technologies used: JS, jQ
+Technologies used: JS, jQ <br>
 Output: https://mickjasinski.github.io/11.6/
